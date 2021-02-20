@@ -1,0 +1,70 @@
+.img_logo_navbar
+{
+    height: 52px;
+    width: 50px;
+    padding: 5px;
+}
+
+.name_logo{
+    margin-right: 60rem;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 18px;
+    text-align: center;
+}
+
+.title_hotel{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.title_hotel span{
+    font-size: 30px;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+.input_search{
+    width: 20rem;
+    margin-left: 10px;
+    padding-top: 40px;
+}
+
+.table_hotel thead{
+    background: #91b8f1;
+}
+
+
+
+h1 { 
+    color:green; 
+} 
+.xyz { 
+    background-size: auto; 
+    text-align: center; 
+    padding-top: 100px; 
+} 
+.btn-circle.btn-sm { 
+    width: 30px; 
+    height: 30px; 
+    padding: 6px 0px; 
+    border-radius: 15px; 
+    font-size: 8px; 
+    text-align: center; 
+} 
+.btn-circle.btn-md { 
+    width: 50px; 
+    height: 50px; 
+    padding: 7px 10px; 
+    border-radius: 25px; 
+    font-size: 10px; 
+    text-align: center; 
+} 
+.btn-circle.btn-xl { 
+    width: 70px; 
+    height: 70px; 
+    padding: 10px 16px; 
+    border-radius: 35px; 
+    font-size: 12px; 
+    text-align: center; 
+} 
