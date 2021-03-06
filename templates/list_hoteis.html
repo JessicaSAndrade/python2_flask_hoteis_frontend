@@ -8,14 +8,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Css's -->
+        <!-- Bootstrap -->
         <link href="../assets/css/bootstrap/bootstrap-grid.css" rel="stylesheet">
         <link href="../assets/css/bootstrap/bootstrap-reboot.css" rel="stylesheet">
         <link href="../assets/css/bootstrap/bootstrap-utilities.css" rel="stylesheet">
         <link href="../assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+
+        <!-- FontAwesome -->
+        <link href="../assets/css/fontAwesome/all.css" rel="stylesheet">
+        <link href="../assets/css/fontAwesome/brands.css" rel="stylesheet">
+        <link href="../assets/css/fontAwesome/regular.css" rel="stylesheet">
+        <link href="../assets/css/fontAwesome/solid.css" rel="stylesheet">
+
+        <!-- Local CSS -->
         <link href="../assets/css/css's/style.css" rel="stylesheet">
 
-        <!-- Javascripts -->
-        <script type="text/javascript" src="../assets/js/bootstrap.js"></script>
+        <!-- Javascript bootstrap -->
+        <script type="text/javascript" src="../assets/js/bootstrap/bootstrap.js"></script>
+        <!-- Javascript FontAwesome -->
+        <script type="text/javascript" src="../assets/js/fontAwesome/all.js"></script>
+        <!-- Javascript Local JS -->
+        <script type="text/javascript" src="../assets/js/js's/script.js"></script>
+          <!-- Javascript SweetAlert -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
         <!-- Favion -->
         <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png">
@@ -89,10 +104,14 @@
                     <td>
                         <div class="row">
                             <div class="col-2">
-                                <button type="button" class="btn btn-primary btn-circle btn-sm">Editar</button>
+                                <button type="button" class="btn btn-primary btn-circle btn-sm">
+                                  <i class="fas fa-pencil-alt icon_size"></i>
+                                </button>
                             </div>
                             <div class="col-2">
-                                <button type="button" class="btn btn-danger btn-circle btn-sm">Excluir</button>
+                                <button type="button" class="btn btn-danger btn-circle btn-sm" onclick="remove(10)">
+                                  <i class="fas fa-trash icon_size"></i>
+                                </button>
                             </div>
                         </div>
                     </td>

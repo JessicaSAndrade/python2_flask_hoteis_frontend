@@ -35,7 +35,6 @@
 }
 
 
-
 h1 { 
     color:green; 
 } 
@@ -68,3 +67,34 @@ h1 {
     font-size: 12px; 
     text-align: center; 
 } 
+
+.icon_size{
+    font-size: 12px;
+}
+
+.section_form_top{
+    margin-top: 30px;
+}
+
+.grid-container-form-hotel {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+
+.item-grid-container-form-hotel{
+    padding: 10px;
+}
+
+.item-grid-container-form-hotel span{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.button-grid-container-form-hotel{
+    padding-top: 28px;
+}
+
+.button-grid-container-form-hotel button{
+    float: right;
+}
