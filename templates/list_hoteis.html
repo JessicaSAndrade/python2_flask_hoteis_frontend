@@ -27,10 +27,10 @@
         <script type="text/javascript" src="../assets/js/bootstrap/bootstrap.js"></script>
         <!-- Javascript FontAwesome -->
         <script type="text/javascript" src="../assets/js/fontAwesome/all.js"></script>
-        <!-- Javascript Local JS -->
-        <script type="text/javascript" src="../assets/js/js's/script.js"></script>
-          <!-- Javascript SweetAlert -->
+        <!-- Javascript SweetAlert -->
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <!-- Javascript HandlerBars -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
 
         <!-- Favion -->
         <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png">
@@ -74,9 +74,11 @@
         <div class="input_search">
             <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="Pesquisar Hoteis..." 
-                aria-label="Pesquisar Hoteis..." aria-describedby="basic-addon2">
+                aria-label="Pesquisar Hoteis..." aria-describedby="basic-addon2" id="searchHoteis">
                 <div class="input-group-append">
-                  <button class="btn btn-outline-secondary" type="button">Pesquisar</button>
+                  <button class="btn btn-outline-secondary" type="button" onclick="getById()">
+                    Pesquisar
+                  </button>
                 </div>
               </div>
         </div>
@@ -88,7 +90,8 @@
             <table class="table table_hotel">
                 <thead class="thead-dark">
                   <tr>
-                    <th scope="col">Nome</th>
+                    <th scope="col" style="width: 15%;">Id</th>
+                    <th scope="col" style="width: 15%;">Nome</th>
                     <th scope="col">Estrelas</th>
                     <th scope="col">Diária</th>
                     <th scope="col">Cidade</th>
@@ -96,29 +99,33 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">Noronha</th>
-                    <td>5.0</td>
-                    <td>500,00</td>
-                    <td>Fernando de Noronha</td>
-                    <td>
-                        <div class="row">
-                            <div class="col-2">
-                                <button type="button" class="btn btn-primary btn-circle btn-sm">
-                                  <i class="fas fa-pencil-alt icon_size"></i>
-                                </button>
-                            </div>
-                            <div class="col-2">
-                                <button type="button" class="btn btn-danger btn-circle btn-sm" onclick="remove(10)">
-                                  <i class="fas fa-trash icon_size"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </td>
-                  </tr>
                 </tbody>
               </table>
+              <script id="tableLista" type="text/template">
+                <tr>
+                  <td>{{hotel_id}}</td>
+                  <td>{{nome}}</td>
+                  <td>{{estrelas}}</td>
+                  <td>{{diaria}}</td>
+                  <td>{{cidade}}</td> 
+                  <td>
+                    <div class="row">
+                        <div class="col-2">
+                            <button type="button" class="btn btn-primary btn-circle btn-sm">
+                              <i class="fas fa-pencil-alt icon_size"></i>
+                            </button>
+                        </div>
+                        <div class="col-2">
+                            <button type="button" class="btn btn-danger btn-circle btn-sm" onclick="remove('{{hotel_id}}')">
+                              <i class="fas fa-trash icon_size"></i>
+                            </button>
+                        </div>
+                    </div>
+                </td>
+                </tr>
+              </script>
         </div>
     </section>
     </body>
+    <script type="text/javascript" src="../assets/js/js's/script.js"></script>
 </html>

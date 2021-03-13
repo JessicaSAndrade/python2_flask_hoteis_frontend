@@ -27,6 +27,10 @@
     <script type="text/javascript" src="../assets/js/bootstrap/bootstrap.js"></script>
     <!-- Javascript FontAwesome -->
     <script type="text/javascript" src="../assets/js/fontAwesome/all.js"></script>
+    <!-- Javascript Local JS -->
+    <script type="text/javascript" src="../assets/js/js's/script.js"></script>
+    <!-- Javascript SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <!-- Favion -->
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png">
@@ -67,6 +71,7 @@
 
   <!-- Formulário -->
   <section class="section_form_top">
+  <form id="formHoteis">
     <div class="grid-container-form-hotel">
       <!-- Primeira linha -->
       <div class="item-grid-container-form-hotel">
@@ -97,10 +102,11 @@
       </div>
 
       <div class="item-grid-container-form-hotel button-grid-container-form-hotel">
-        <button type="button" class="btn btn-success">Salvar Formulário</button>
+        <button type="button" class="btn btn-success"  onclick="post()" >Salvar Formulário</button>
+        <button type="button" class="btn btn-success"  onclick="put()" >Salvar edição do Formulário</button>
       </div>
-
     </div>
+  </form>
   </section>
 
   </body>
